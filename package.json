@@ -1,0 +1,36 @@
+{
+  "name": "cucumber-visualizer",
+  "version": "1.0.0",
+  "description": "Visualize the relation between your cucumber steps from a cucumber json output",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run eslint && npm run coverage",
+    "eslint": "eslint src test",
+    "eslint-fix": "eslint --fix src test",
+    "coverage": "nyc --reporter=html --reporter=text mocha",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lenntt/cucumber-visualizer.git"
+  },
+  "keywords": [
+    "cucumber",
+    "visualization",
+    "d3"
+  ],
+  "author": "Lennart Tange",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lenntt/cucumber-visualizer/issues"
+  },
+  "homepage": "https://github.com/lenntt/cucumber-visualizer#readme",
+  "dependencies": {
+    "npm": "^6.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "mocha": "^5.1.1",
+    "nyc": "^11.7.3"
+  }
+}
